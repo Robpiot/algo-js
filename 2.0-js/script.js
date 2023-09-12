@@ -97,15 +97,15 @@
 
 // EXO 2.7 
 
-let n = Number(prompt('Enter a number : '))
-let sum = 0
+// let n = Number(prompt('Enter a number : '))
+// let sum = 0
 
-for (i = 0; i<= n; i++){
-    sum =  sum + i;
+// for (i = 0; i<= n; i++){
+//     sum =  sum + i;
 
-}
+// }
 
-    alert('Sum of ' + n +' is' + sum);
+//     alert('Sum of ' + n +' is' + sum);
     
     
  

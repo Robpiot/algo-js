@@ -1,32 +1,32 @@
 // EXO 5.1
+ 
 
-
-    
+let movieName = prompt("What's the name of the movie ? :");
+let productionYear= Number(prompt("Which year was it released ?  :"));
+let castMembers = [];
+const myObject = {movieName, productionYear, castMembers};
 function askTvSerie() {
-    let movieName = prompt("What's the name of the movie ? :");
-    let productionYear= prompt("Which year was it released ?  :");
-    let castMembers = [];
+    
     
     while(confirm("Do you want to add a cast members ?")) {
         let cast = prompt('Enter the of the cast members:');
-        castMembers.push({cast})
+        castMembers.push(cast)
     }
-    const myObject = {movieName, productionYear, castMembers};
+   
     return myObject;
 }
-console.log(askTvSerie());
-
-
+askTvSerie();
+console.log(myObject);
 
 
 // EXO 5.2
-const tvSerie = askTvSerie()
+
+
+
 function randomizeCast(tvSerie) {
-      result = Math.floor(Math.random([])*tvSerie.length)
-
+      rand = Math.floor(Math.random()*tvSerie.castMembers.length)
+        result = tvSerie.castMembers[rand]
    return result;
-    
-
-
 }
-console.log(randomizeCast(tvSerie));
+randomizeCast(myObject)
+console.log(randomizeCast(myObject)); 

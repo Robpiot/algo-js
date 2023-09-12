@@ -91,19 +91,22 @@
 
 // EXO 4.6
 
-let a = Number(prompt('Which number do you want to factorialize ? : '));
+// let a = Number(prompt('Which number do you want to factorialize ? : '));
 
-function factorial(a) {
-    if (a < 0) 
-    return -1
+// function factorial(a) {
+//     if (a < 0) 
+//     return -1
 
-    else if (a == 0)
-    return 1;
-else {
-    return (a* factorial(a-1))
-}
-}
-console.log(factorial(a));
+//     else if (a == 0)
+//     return 1;
+// else {
+//     return (a* factorial(a-1))
+// }
+// }
+// console.log(factorial(a));
+
+
+
 
 
 
