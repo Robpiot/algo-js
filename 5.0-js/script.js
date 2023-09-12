@@ -1,7 +1,7 @@
 // EXO 5.1
  
 let myObject = {
-    
+    myMovies : [],
     serieName : prompt("What's the name of the movie ? :"),
     productionYear : Number(prompt("Which year was it released ?  :")),
     castMembers : [],
