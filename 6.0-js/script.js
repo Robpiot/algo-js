@@ -23,25 +23,44 @@ console.log(myCircle.surface);
 // 6.2
 
 
-class rectangle {
-    constructor(topLeftXPos, topLeftYPos, width, height) {
-        this.topLeftXPos = topLeftXPos
-        this.topLeftYPos = topLeftYPos
-        this.width = width
-        this.height = height
+
+
+
+
+    class rectangle {
+        constructor(x, y, width, height) {
+            this.x = x
+            this.y = y
+            this.width = width
+            this.height = height
+    } }
+
+      function collides(r1, r2) {
+ 
+    // if rectangle has area 0, no overlap
+ 
+    // If one rectangle is on left side of other
+    if (r1.x > r2.x || r2.x > r1.x) {
+        return false;
     }
 
-    collides(rectBx, rectBy,) {
-        if(rectBx > topLeftXPos && rectBx < topLeftXPosX + width && rectBy > topLeftYPos && rectBy < topLeftYPos + height){
-	return true
-}
-    }
+    // If one rectangle is above other
+    if (r1.y > r2.y || r2.y > r1.y) {
+        return false;
     }
 
-    let myRectangle = new rectangle(5, 5, 20, 20)
+    return true; } 
 
-    console.log(myRectangle.collides);
+    let r1 = new rectangle(5, 15, 10, 10)
+    let r2 = new rectangle(5, 15, 10, 10)
+
     
-    
+    if (collides( r1, r2)) {
+        console.log("Rectangles collides");
+    } else {
+        console.log("Rectangles Don't collides");
+    }
+
+
     
     
